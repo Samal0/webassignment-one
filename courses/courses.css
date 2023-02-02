@@ -1,0 +1,35 @@
+main {
+    text-align: center;
+}
+
+input {
+    margin-top: 40px;
+    width: 880px;
+    height: 75px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    outline: none;
+    font-size: 25px;
+    font-weight: 300;
+    border: none;
+    background-color: #505050;
+    margin-bottom: 70px;
+}
+
+input::placeholder {
+    color: #E2E2E2;
+}
+
+.courses-container {
+    width: 500px;
+    height: 415px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.courses-container img {
+    width: 460px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+}
