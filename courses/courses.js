@@ -31,7 +31,7 @@ courses.forEach(course => {
     coursesContainer.appendChild(createCourseElement(course));
 });
 
-searchInput.addEventListener("keydown", () => {
+searchInput.addEventListener("input", () => {
     for (let i = 0; i < coursesContainer.children.length; i++) {
         const child = coursesContainer.children[i];
         const description = child.getElementsByTagName("p")[0].textContent.toLowerCase();
