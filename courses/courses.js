@@ -36,7 +36,7 @@ searchInput.addEventListener("keydown", () => {
         const child = coursesContainer.children[i];
         const description = child.getElementsByTagName("p")[0].textContent.toLowerCase();
 
-        if (searchInput.value === "") {
+        if (searchInput.value.length === 0) {
             child.style.display = "block";
             continue;
         }
