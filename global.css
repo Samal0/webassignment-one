@@ -38,10 +38,27 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('./public/fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 :root {
     --navbar-height: 93px;
+}
+
+h1 {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 body {
@@ -49,6 +66,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter";
+    background-color: #272727;
+    color: white;
 }
 
 header {
@@ -61,7 +80,7 @@ header {
     font-weight: bold;
 }
 
-img {
+header img {
     position: absolute;
     left: 0;
     top: calc(var(--navbar-height) / 8);
@@ -81,12 +100,21 @@ header .nav-current {
 
 h1 {
   font-weight: 900;
-  font-size: 150px;
-  margin: 0;
+  font-size: 130px;
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 50px;
-  margin: 0;
+  text-align: left;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 35px;
 }
