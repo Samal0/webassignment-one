@@ -11,32 +11,18 @@ main h1 {
     justify-content: center;
 }
 
+button {
+    margin-left: 30px;
+}
+
 .cta-btns {
     display: flex;
     margin-top: 25px;
     justify-content: center;
 }
 
-.cta-btns button {
-    outline: none;
-    margin-left: 30px;
-    cursor: pointer;
-    width: 285px;
-    height: 65px;
-    border-radius: 5px;
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-    transition: all 0.2s ease;
-}
-
 .cta-btns .catalog-btn {
     border: none;
-    background-color: #0066FF;
-}
-
-.cta-btns .catalog-btn:hover {
-    background-color: #00378a;
 }
 
 .cta-btns .apply-btn {

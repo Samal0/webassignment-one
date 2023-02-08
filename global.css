@@ -82,7 +82,7 @@ header {
 
 header img {
     position: absolute;
-    left: 0;
+    left: 30px;
     top: calc(var(--navbar-height) / 8);
 }
 
@@ -121,4 +121,21 @@ p {
 
 input {
     color: white;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    width: 285px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s ease;
+    background-color: #0066FF;
+}
+
+button:hover {
+    background-color: #00378a;
 }
