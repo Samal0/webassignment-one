@@ -20,7 +20,7 @@ const courses = [
     },
     {
         bannerUrl: "../public/images/node-banner.png",
-        description: "Node is an easy to use and intuitive server environment that proves very useful for server development. This allows developers to handle data in database systems."
+        description: "NodeJS is an easy to use and intuitive server environment that proves very useful for server development. This allows developers to handle data in database systems."
     },
 ]
 

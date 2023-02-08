@@ -50,7 +50,7 @@ button {
 .reviews {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px
+    margin-bottom: 100px;
 }
 
 .reviews div {
@@ -70,6 +70,22 @@ button {
     width: 420px;
 }
 
+.reviews div a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.reviews div a:hover {
+    text-decoration: underline;
+}
+
+.reviews a {
+    margin: 0 auto;
+}
+
 .reviews img {
     font-size: 15px;
+    border-radius: 99px;
+    width: 120px;
 }

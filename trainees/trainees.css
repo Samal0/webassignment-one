@@ -1,0 +1,46 @@
+.info {
+    margin-bottom: 75px;
+}
+
+.profiles {
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.profile {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: #2D2C2C;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    margin: auto;
+}
+
+.profile div {
+    height: 100%;
+    margin-left: 15px;
+}
+
+.profile img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 212px;
+    height: 343px;
+}
+
+.profile div h4 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.profile div p {
+    font-size: 25px;
+}

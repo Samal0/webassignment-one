@@ -78,6 +78,8 @@ header {
     height: var(--navbar-height);
     justify-content: center;
     font-weight: bold;
+    position: sticky;
+    top: 0;
 }
 
 header img {
@@ -138,4 +140,16 @@ button {
 
 button:hover {
     background-color: #00378a;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 210px;
+    margin-top: 85px;
+}
+
+.info h3 {
+    text-align: center;
 }
