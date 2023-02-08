@@ -1,6 +1,7 @@
 const jobsContainerDiv = document.getElementById("jobs-container");
 const selectInput = document.getElementById("select-input");
 const applicationInput = document.getElementsByTagName("textarea")[0];
+const formEl = document.getElementsByTagName("form")[0];
 
 const jobs = [
     {
@@ -34,6 +35,10 @@ const onlyFirstLetterUpper = (str) => {
     return str[0].toUpperCase() + str.slice(1).toLowerCase();
 }
 
+const setApplicationInputPlaceholder = (selectedJob) => {
+    applicationInput.placeholder = `${onlyFirstLetterUpper(selectedJob)} experience, portfolio etc.`
+}
+
 const createJobElement = ({ name, description }) => {
     const divEl = document.createElement("div"); 
 
@@ -47,10 +52,12 @@ const createJobElement = ({ name, description }) => {
     btnEl.textContent = "Apply";
     btnEl.className = name;
 
-    btnEl.addEventListener("click", () => {
+    btnEl.addEventListener("click", (e) => {
+        e.preventDefault();
+
         location.href = "#form";
         selectInput.value = name;
-        applicationInput.placeholder = `${onlyFirstLetterUpper(name)} experience, portfolio etc.`
+        setApplicationInputPlaceholder(name);
     });
 
     divEl.appendChild(headingEl);
@@ -67,7 +74,16 @@ const createSelectOptionElement = (jobName) => {
     return optionEl;
 }
 
+selectInput.addEventListener("change", (e) => {
+    applicationInput.placeholder = `${onlyFirstLetterUpper(e.target.value)} experience, portfolio etc.`
+})
+
 jobs.forEach(job => {
     jobsContainerDiv.appendChild(createJobElement(job));
     selectInput.appendChild(createSelectOptionElement(job.name));
+    setApplicationInputPlaceholder(selectInput.value);
 });
+
+formEl.addEventListener("submit", (e) => {
+    
+})
