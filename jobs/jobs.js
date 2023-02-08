@@ -1,5 +1,6 @@
 const jobsContainerDiv = document.getElementById("jobs-container");
-// const jobTitles = ["Frontend Engineer", "Backend Engineer", "Infastructure Engineer", "UX Designer", "Marketer", "Customer Service"];
+const selectInput = document.getElementById("select-input");
+const applicationInput = document.getElementsByTagName("textarea")[0];
 
 const jobs = [
     {
@@ -13,8 +14,25 @@ const jobs = [
     {
         name: "Infastructure Engineer",
         description: "Keep track of our systems and ensure that they are working correctly and securely"
+    },
+    {
+        name: "UX Designer",
+        description: "Create high quality UX designs for high customer experience and satisfaction."
+    },
+    {
+        name: "Marketer",
+        description: "Responsible for the company image and spreading the word about HotBeans."
+    },
+    {
+        name: "Customer Service",
+        description: "Improve our customer experience and satisfaction but interacting directly with customers."
     }
 ];
+
+/** Sets the first letter in string to uppercase and the rest to lowercase */
+const onlyFirstLetterUpper = (str) => {
+    return str[0].toUpperCase() + str.slice(1).toLowerCase();
+}
 
 const createJobElement = ({ name, description }) => {
     const divEl = document.createElement("div"); 
@@ -27,6 +45,13 @@ const createJobElement = ({ name, description }) => {
 
     const btnEl = document.createElement("button");
     btnEl.textContent = "Apply";
+    btnEl.className = name;
+
+    btnEl.addEventListener("click", () => {
+        location.href = "#form";
+        selectInput.value = name;
+        applicationInput.placeholder = `${onlyFirstLetterUpper(name)} experience, portfolio etc.`
+    });
 
     divEl.appendChild(headingEl);
     divEl.appendChild(paraEl);
@@ -35,6 +60,14 @@ const createJobElement = ({ name, description }) => {
     return divEl;
 }
 
+const createSelectOptionElement = (jobName) => {
+    const optionEl = document.createElement("option");
+    optionEl.textContent = jobName;
+
+    return optionEl;
+}
+
 jobs.forEach(job => {
     jobsContainerDiv.appendChild(createJobElement(job));
-})
+    selectInput.appendChild(createSelectOptionElement(job.name));
+});

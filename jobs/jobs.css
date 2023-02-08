@@ -36,3 +36,63 @@
     position: absolute;
     bottom: 30px;
 }
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px
+}
+
+form {
+    width: 710px;
+    text-align: center;
+    display: inline-block;
+}
+
+input, textarea, select, option {
+    width: 100%;
+    background-color: #505050;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+input, select, option {
+    height: 80px;
+    padding: 0 20px;
+}
+
+select {
+    color: white;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+    color: #E2E2E2;
+}
+
+textarea {
+    font-family: "Inter";
+    height: 300px;
+    color: white;
+    padding: 20px;
+    resize: none;
+}
+
+form .upload-btn {
+    width: 100%;
+    color: #333333;
+    background-color: #B0B0B0;
+    border: none;
+    margin-bottom: 22px;
+}
+
+form .upload-btn:hover {
+    background-color: #757575;
+}
+
+form button[type="submit"] {
+    border: none;
+    margin-bottom: 30px;
+}
