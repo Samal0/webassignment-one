@@ -44,7 +44,7 @@ button {
 }
 
 .about p {
-    padding: 0 350px;
+    padding: 0 18vw;
 }
 
 .reviews {
@@ -55,7 +55,7 @@ button {
 
 .reviews div {
     margin-left: 58px;
-    width: 600px;
+    width: 30vw;
     display: flex;
     text-align: left;
     border: solid 3px #8A8A8A;
@@ -88,4 +88,62 @@ button {
     font-size: 15px;
     border-radius: 99px;
     width: 120px;
+}
+
+@media only screen and (max-width: 700px) {
+    .about h3 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 1780px) {
+    .reviews div {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews div {
+        margin-bottom: 40px;
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .cta-btns button {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .reviews div {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews div {
+        width: 70%;
+    }
+    
+    .reviews img {
+    }
 }

@@ -72,6 +72,7 @@ body {
     font-family: "Inter";
     background-color: #272727;
     color: white;
+    min-width: fit-content;
 }
 
 select, input, textarea {
@@ -81,7 +82,7 @@ select, input, textarea {
 header {
     display: flex;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     background-color: #343434;
     height: var(--navbar-height);
     justify-content: center;
@@ -91,7 +92,7 @@ header {
     z-index: 1;
 }
 
-header img {
+header a img {
     position: absolute;
     left: 30px;
     top: calc(var(--navbar-height) / 8);
@@ -161,4 +162,25 @@ button:hover {
 
 .info h3 {
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    header a img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    header {
+        height: 200px;
+        flex-direction: column;
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+}
+
+.imga {
+    margin-left: 0;
 }

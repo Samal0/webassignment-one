@@ -4,7 +4,7 @@
 
 input {
     margin-top: 40px;
-    width: 880px;
+    width: 80vw;
     height: 75px;
     border-radius: 5px;
     padding: 0px 20px;
@@ -55,4 +55,18 @@ input::placeholder {
     height: 60px;
     position: absolute;
     bottom: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .courses-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 80%;
+    }
 }
