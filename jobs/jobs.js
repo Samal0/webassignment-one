@@ -39,6 +39,14 @@ const setApplicationInputPlaceholder = (selectedJob) => {
     applicationInput.placeholder = `${onlyFirstLetterUpper(selectedJob)} experience, portfolio etc.`
 }
 
+const handleJobClick = (e, jobName) => {
+    e.preventDefault();
+
+    location.href = "#form";
+    selectInput.value = jobName;
+    setApplicationInputPlaceholder(jobName);
+}
+
 const createJobElement = ({ name, description }) => {
     const divEl = document.createElement("div"); 
 
@@ -53,12 +61,11 @@ const createJobElement = ({ name, description }) => {
     btnEl.className = name;
 
     btnEl.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        location.href = "#form";
-        selectInput.value = name;
-        setApplicationInputPlaceholder(name);
     });
+
+    divEl.addEventListener("click", (e) => {
+        handleJobClick(e, name);
+    })
 
     divEl.appendChild(headingEl);
     divEl.appendChild(paraEl);
