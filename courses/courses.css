@@ -37,7 +37,7 @@ input::placeholder {
 }
 
 .courses-container img {
-    width: 480px;
+    width: 100%;
     height: 110px;
     object-fit: cover;
     border-radius: 10px;
@@ -66,5 +66,31 @@ input::placeholder {
 
     input {
         width: 70%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .courses-container div {
+        width: 70%;
+        height: 330px;
+    }
+
+    .courses-container div p {
+        font-size: 1.3em;
+    }
+
+    .courses-container div button {
+        font-size: 1.5em;
+        height: 45px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .courses-container div {
+        height: 350px;
+    }
+
+    .courses-container div img {
+        display: none;
     }
 }
