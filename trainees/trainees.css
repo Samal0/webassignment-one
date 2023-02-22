@@ -38,11 +38,11 @@
 
 .profile div h4 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.6em;
 }
 
 .profile div p {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 @media only screen and (max-width: 1290px) {
@@ -53,7 +53,7 @@
    } 
 
    .info p {
-    font-size: 28px;
+    font-size: 1.75em;
     text-align: center;
    }
 

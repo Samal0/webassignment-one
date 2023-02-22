@@ -66,7 +66,7 @@ button {
 
 .reviews div p {
     margin: auto 0;
-    font-size: 30px;
+    font-size: 1.9em;
     width: 420px;
 }
 
@@ -74,6 +74,7 @@ button {
     cursor: pointer;
     color: white;
     text-decoration: none;
+    font-size: 1.7em;
 }
 
 .reviews div a:hover {
@@ -85,20 +86,32 @@ button {
 }
 
 .reviews img {
-    font-size: 15px;
+    font-size: 0.9em;
     border-radius: 99px;
     width: 120px;
 }
 
 @media only screen and (max-width: 700px) {
     .about h3 {
-        font-size: 30px;
+        font-size: 1.9em;
     }
 
     .about p {
-        font-size: 20px;
+        font-size: 1.5em;
         width: 100%;
-        padding: 0 15px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .cta-btns button {
+        width: 220px;
     }
 }
 
@@ -117,32 +130,58 @@ button {
     .reviews div {
         margin-bottom: 40px;
         width: 40vw;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    h1 {
-        font-size: 100px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .cta-btns button {
-        width: 250px;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 1400px) {
     .reviews div {
-        width: 20px;
-        height: 200px;
+        width: 70%;
+    }
+
+    .reviews div a {
+        margin: auto;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 640px) {
     .reviews div {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .reviews img {
+        width: 120px;
+    }
+
+    .reviews div p, .reviews div a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .cta-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btns button {
+        margin-bottom: 20px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .cta-btns button {
         width: 70%;
+        height: 60px;
     }
 }
