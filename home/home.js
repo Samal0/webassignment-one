@@ -1,11 +1,11 @@
 const btns = [
     {
         el: document.getElementsByClassName("catalog-btn")[0],
-        link: "../courses/courses.html"
+        link: "../courses/index.html"
     },
     {
         el: document.getElementsByClassName("apply-btn")[0],
-        link: "../jobs/jobs.html",
+        link: "../jobs/index.html",
     }
 ];
 
