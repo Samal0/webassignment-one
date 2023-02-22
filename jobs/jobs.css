@@ -139,3 +139,36 @@ form button[type="submit"] {
     margin: 50px;
    }
 }
+
+@media only screen and (max-width: 800px) {
+    .jobs-container div {
+        width: 90%;
+        height: 40vw;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="email"], textarea, select, option {
+        width: 500px;
+    }
+
+    select option {
+        font-size: 1em;
+    }
+
+    form img {
+        right: 130px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .jobs-container div {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .jobs-container div {
+        height: 450px;
+    }
+}
