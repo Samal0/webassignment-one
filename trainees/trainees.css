@@ -44,3 +44,20 @@
 .profile div p {
     font-size: 25px;
 }
+
+@media only screen and (max-width: 1290px) {
+   .profiles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   } 
+
+   .info p {
+    font-size: 28px;
+    text-align: center;
+   }
+
+   .info {
+    margin: 50px;
+   }
+}
