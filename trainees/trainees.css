@@ -61,3 +61,17 @@
     margin: 50px;
    }
 }
+
+@media only screen and (max-width: 700px) {
+    .profile {
+        width: 80%;
+    }
+
+    .profile img {
+        display: none;
+    }
+
+    .info p {
+        font-size: 1.4em
+    }
+}
