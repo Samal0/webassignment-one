@@ -74,7 +74,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     background-color: #272727;
     color: white;
     min-width: fit-content;

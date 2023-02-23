@@ -2,6 +2,8 @@ const jobsContainerDiv = document.getElementById("jobs-container");
 const selectInput = document.getElementById("select-input");
 const applicationInput = document.getElementsByTagName("textarea")[0];
 const formEl = document.getElementsByTagName("form")[0];
+const nameInput = document.getElementById("name-input");
+const emailInput = document.getElementById("email-input");
 
 const jobs = [
     {
@@ -92,5 +94,16 @@ jobs.forEach(job => {
 });
 
 formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
     
+    alert("Thank you for submitting your application.");
+    nameInput.value = "";
+    selectInput.value = "Frontend Engineer";
+    emailInput.value = "";
+    applicationInput.value = "";
 })
+
+const isEdge = navigator.userAgent.match(/edg/i)
+if (isEdge) {
+    jobsContainerDiv.style.padding = "0 60px";
+}

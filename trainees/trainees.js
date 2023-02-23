@@ -60,3 +60,9 @@ const createTraineeComponent = ({ name, description, imgSrc }) => {
 trainees.forEach(trainee => {
     profilesContainer.appendChild(createTraineeComponent(trainee));
 });
+
+
+const isEdge = navigator.userAgent.match(/edg/i)
+if (isEdge) {
+    profilesContainer.style.margin = "0 40px";
+}

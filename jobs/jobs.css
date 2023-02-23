@@ -72,6 +72,14 @@ input, select, option {
     padding: 0 20px;
 }
 
+input, select {
+    font-size: 1.6em;
+}
+
+option {
+    font-size: 1em;
+}
+
 select {
     color: white;
     cursor: pointer;
